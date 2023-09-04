@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiri:ital@1&family=Archivo+Black&family=Courgette&family=Inter:wght@300&family=League+Spartan&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100;1,300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFanily: {
+          archivo: [" 'Archivo Black', sans-serif"]
+        }
+          
+      }
+    }
+  </script>
+
+
+  <style>
+
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- <h3>Hello world</h3> -->
+  <!-- colors -->
+  <div class="bg-blue-300 text-yellow-800 mb-20 mt-5 mx-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Harum debitis nisi necessitatibus quasi modi commodi quae? Aliquam, facilis nostrum.
+    Sed perspiciatis repellat ab eum possimus necessitatibus,
+    quas ut voluptatum error.
+  </div>
+
+  <div class="bg-red-300 text-fuchsia-800 m-8">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Harum debitis nisi necessitatibus quasi modi commodi quae? Aliquam, facilis nostrum.
+    Sed perspiciatis repellat ab eum possimus necessitatibus,
+    quas ut voluptatum error.
+  </div>
+
+  <div class="bg-green-300 text-amber-700 p-20 border border-red-500 mx-12">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Harum debitis nisi necessitatibus quasi modi commodi quae? Aliquam, facilis nostrum.
+    Sed perspiciatis repellat ab eum possimus necessitatibus,
+    quas ut voluptatum error.
+  </div>
+
+  <!-- arbitrary colors -->
+  <input type="text" name="" class="border border-[red] outline-none ml-20 mt-5 p-1 w-80">
+
+  <!-- space between -->
+  <div class="flex mt-2 space-x-2 mx-4">
+    <div class="bg-red-100 p-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatibus.
+    </div>
+    <div class="bg-red-100 p-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatibus.
+    </div>
+    <div class="bg-red-100 p-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatibus.
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <p class="text-sm bg-yellow-100 m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+  <p class="text-base bg-green-100  m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+  <p class="text-lg bg-blue-100 m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+  <p class="text-xl bg-indigo-100 m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+  <p class="text-2xl bg-slate-100 m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+  <p class="text-7xl bg-slate-100 m-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quae.
+  </p>
+
+  <!-- Font family in tailwind css -->
+  <div class="m-5">
+    <p class="font-sans">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magnam?
+    </p>
+    <p class="font-serif">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magnam?
+    </p>
+    <p class="font-mono">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magnam?
+    </p>
+  </div>
+
+    <!-- Font family of google fonts -->
+    <div class="m-5">
+      <p class="font-archivo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+    </div>
+
+    <!-- font weight -->
+    <div class="m-5 bg-green-100 p-2 ">
+      <p class="font-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+      <p class="font-bold">
+        <span class="text-red-800">L</span><span class="text-blue-800">o</span><span class="text-green-700">r</span>e<span class="text-yellow-800">m</span> ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+      <p class="semi-bold">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+      <p class="font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+      <p class="font-extrabold">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, reprehenderit?
+      </p>
+    </div>
+
+    <!-- text-alignment -->
+    <div class="m-5 bg-blue-400 p-3 text-red-800">
+      <p class="text-left">Lorem ipsum dolor sit amet.</p>
+      <p class="text-center text-green-800">Lorem ipsum dolor sit amet.</p>
+      <p class="text-right text-black">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+
+    <!-- width -->
+    <div class="m-5 flex place-content-between">
+      <div class="w-4 bg-blue-400">width of tailwind Css</div>
+      <div class="w-10 bg-yellow-400">width of tailwind Css</div>
+      <div class="w-[200px] bg-green-400">width of tailwind Css</div>
+    </div>
+
+
+    <!-- percentage of width -->
+    <div class="m-5 space-y-2">
+      <div class="bg-green-300 w-1/1">percentage in tailwind css </div>
+      <div class="bg-green-300 w-1/2">percentage in tailwind css </div>
+      <div class="bg-green-300 w-1/3">percentage in tailwind css </div>
+      <div class="bg-green-300 w-1/4">percentage in tailwind css </div>
+      <div class="bg-green-300 w-[100%]">percentage in tailwind css </div>
+    </div>
+
+    <!-- view port of highy-->
+    <div class=" h-screen bg-slate-300">
+      <div class="m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis laborum magnam placeat vero adipisci unde eaque quia, totam beatae, tempora, eveniet culpa in aut. Dolorum quasi vero quisquam itaque?</div>
+      <div class="m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis laborum magnam placeat vero adipisci unde eaque quia, totam beatae, tempora, eveniet culpa in aut. Dolorum quasi vero quisquam itaque?</div>
+      <div class="m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis laborum magnam placeat vero adipisci unde eaque quia, totam beatae, tempora, eveniet culpa in aut. Dolorum quasi vero quisquam itaque?</div>
+      <div class="m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis laborum magnam placeat vero adipisci unde eaque quia, totam beatae, tempora, eveniet culpa in aut. Dolorum quasi vero quisquam itaque?</div>
+      <div class="m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis laborum magnam placeat vero adipisci unde eaque quia, totam beatae, tempora, eveniet culpa in aut. Dolorum quasi vero quisquam itaque?</div>
+    </div>
+
+
+    <!-- backgrounds image -->
+    <div class="mt-2">
+      <div class="h-screen  bg-cover bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+    </div>
+
+    <!-- gradient Color -->
+    <div class="m-3 space-y-1">
+      <div class="w-1/1 h-4 bg-gradient-to-l from-green-500 to-blue-400"></div>
+      <div class="w-1/1 h-4 bg-gradient-to-l from-indigo-500 to-red-400"></div>
+      <div class="w-1/1 h-4 bg-gradient-to-r from-green-500 to-blue-400"></div>
+      <div class="w-1/1 h-4 bg-gradient-to-t from-green-500 to-indigo-400"></div>
+    </div>
+
+
+    <!-- Shadows -->
+    <div class="m-4 space-y-2 flex flex-col w-1/1 bg-white  items-center p-4  ">
+      <div class="bg-white w-64 h-64 shadow  text-center  p-2">
+        Lorem ipsum dolor sit amet consectettext-center  p-2ur adipisicing elit. Labore, commodi.
+      </div>
+      <div class="bg-white w-64 h-64 shadow-sm text-center  p-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, commodi.
+      </div>
+      <div class="bg-white w-64 h-64 shadow-lg text-center  p-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, commodi.
+      </div>
+      <div class="bg-white w-64 h-64 shadow-xl text-center  p-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, commodi.
+      </div>
+      <div class="bg-white w-64 h-64 shadow-2xl text-center  p-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, commodi.
+      </div>
+    </div>
+
+
+    <!-- Responsive -->
+    
+    <!-- 
+      sm (640px)
+      md (768px)
+      lg (1024px)
+      xl (1280px)
+      2xl (1536px)
+     -->
+     <div class="m-5">
+      <div class="h-64 w-1/1 bg-red-300 sm:bg-blue-400 md:bg-green-300 lg:bg-yellow-500"></div>
+     </div>
+
+
+     <!-- flex box -->
+  <div class="mx-5 flex justify-between bg-blue-300 p-2 ">
+    <a href="">My logo</a>
+    <ul class="flex space-x-2">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contect</li>
+      <li>Service</li>
+    </ul>
+  </div>
+
+  <div class="mx-5 h-screen bg-green-300 flex justify-center items-center text-[40px]">
+    <h1 >Sky is the limit</h1>
+  </div>
+
+
+  <!-- Grid -->
+  <div class="m-5 h-screen grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  ">
+    <div class="bg-indigo-300 border border-red-500 col-span-2"></div>
+    <div class="bg-indigo-300 border border-red-500"></div>
+    <div class="bg-indigo-300 border border-red-500"></div>
+    <div class="bg-indigo-300 border border-red-500"></div>
+    <div class="bg-indigo-300 border border-red-500"></div>
+    <div class="bg-indigo-300 border border-red-500"></div>
+    <div class="bg-indigo-300 border border-red-500 lg:row-span-2"></div>
+    <div class="bg-indigo-300 border border-red-500 sm:row-span-2 lg:row-span-1"></div>
+    <div class="bg-indigo-300 border border-red-500 sm:col-span-2 "></div>
+  </div>
+</body>
+</html>
